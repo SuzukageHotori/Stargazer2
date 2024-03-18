@@ -1,0 +1,15 @@
+[project]
+name = "Stargazer2"
+version = "0.1.0"
+description = "Stargazer2"
+readme = "README.md"
+requires-python = ">=3.8, <4.0"
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V12", module_name = "nonebot.adapters.onebot.v12" },
+    { name = "Satori", module_name = "nonebot.adapters.satori" }
+]
+plugins = []
+plugin_dirs = ["stargazer2/plugins"]
+builtin_plugins = ["echo", "single_session"]
